@@ -59,7 +59,7 @@ pub struct MidiInput {
     ignore_flags: Ignore,
 }
 
-#[derive(Clone)]
+#[derive(Debug, Clone)]
 pub struct MidiInputPort {
     name: String,
     interface_id: Box<[u16]>,

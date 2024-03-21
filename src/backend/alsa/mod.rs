@@ -138,7 +138,7 @@ pub struct MidiInput {
     seq: Option<Seq>,
 }
 
-#[derive(Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct MidiInputPort {
     addr: Addr,
 }

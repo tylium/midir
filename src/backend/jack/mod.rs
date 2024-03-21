@@ -24,7 +24,7 @@ pub struct MidiInput {
     client: Option<Client>,
 }
 
-#[derive(Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct MidiInputPort {
     name: CString,
 }
@@ -253,7 +253,7 @@ pub struct MidiOutput {
     client: Option<Client>,
 }
 
-#[derive(Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct MidiOutputPort {
     name: CString,
 }

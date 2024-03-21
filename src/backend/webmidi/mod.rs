@@ -90,7 +90,7 @@ impl Static {
     }
 }
 
-#[derive(Clone, PartialEq)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct MidiInputPort {
     input: web_sys::MidiInput,
 }
